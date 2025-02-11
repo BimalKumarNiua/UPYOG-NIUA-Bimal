@@ -95,7 +95,7 @@ public class Vendor {
 	
 	@JsonProperty("ownerId")
 	@SafeHtml
-	@Size(max=64)
+	@Column(name = "owner_id", length = 64)
 	private String ownerId = null;
 
 	@JsonProperty("agencyType")
