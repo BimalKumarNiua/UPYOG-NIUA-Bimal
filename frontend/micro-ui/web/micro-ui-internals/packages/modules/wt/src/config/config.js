@@ -8,7 +8,7 @@ export const commonConfig =
                     "route": "info",
                     "component": "InfoPage",
                     "nextStep": "applicant-details",
-                    "key": "Documents"
+                    "key": "infodetails"
                 },
                 {
                     "route": "applicant-details",
@@ -22,7 +22,12 @@ export const commonConfig =
                     "texts": {
                         "submitBarLabel": "COMMON_SAVE_NEXT",
                         "header":"ES_APPLICANT_DETAILS"
-                    }
+                    },
+                    "additionaFields":{
+                    "gender":true,
+                    "dateofBirth":false,
+                    "guardianName":false,
+                    "relationShipType":false,               }
                 },
             ],
         },

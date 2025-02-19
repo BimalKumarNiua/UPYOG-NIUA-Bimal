@@ -7,6 +7,8 @@ public class RequestServiceConstants {
 	public static final String BOOKING_DETAIL_FOUND = "Your Water Tanker booking searched successfully";
 
 	public static final String CITIZEN = "CITIZEN";
+	
+	public static final String CITIZEN_NAME = "Citizen";
 
 	public static final String RS_APPLICANT_DETAIL_ENCRYPTION_KEY = "RSApplicantDetail";
 
@@ -85,6 +87,10 @@ public class RequestServiceConstants {
 	public static final String NOTIFICATION_APPROVED = "wt.en.counter.approved";
 	
 	public static final String NOTIFICATION_TANKERBOOKED = "wt.en.counter.tankerbooked";
+	
+	public static final String WF_ACTION_SUBMIT_FEEDBACK = "RATE";
+	
+	public static final String WF_ACTION_REJECTED_BY_VENDOR= "REJECT";
 
 
 }

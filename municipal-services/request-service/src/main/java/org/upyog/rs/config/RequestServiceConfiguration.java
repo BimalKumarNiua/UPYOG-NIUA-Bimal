@@ -13,7 +13,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Builder
 @Component
 @AllArgsConstructor
 @NoArgsConstructor
@@ -42,6 +41,9 @@ public class RequestServiceConfiguration {
 	@Value("${egov.idgen.water.tanker.booking.id.name}")
 	private String waterTankerApplicationKey;
 
+	@Value("${egov.usr.events.pay.link}")
+	private String payLink;
+
 	@Value("${egov.idgen.water.tanker.booking.id.format}")
 	private String waterTankerApplicationFormat;
 
@@ -64,9 +66,16 @@ public class RequestServiceConfiguration {
 
 	@Value("${egov.url.shortner.endpoint}")
 	private String urShortnerPath;
-	
+
 	@Value("${egov.url.shortner.endpoint}")
 	private String shortenerEndpoint;
+
+	// User config
+	@Value("${egov.user.host}")
+	private String userHost;
+
+	@Value("${egov.user.context.path}")
+	private String userContextPath;
 
 	@Value("${egov.user.create.path}")
 	private String userCreateEndpoint;
@@ -125,7 +134,7 @@ public class RequestServiceConfiguration {
 
 	@Value("${egov.demand.search.endpoint}")
 	private String demandSearchEndpoint;
-	
+
 	@Value("${egov.msg.pay.link}")
 	private String payLinkSMS;
 
@@ -151,10 +160,6 @@ public class RequestServiceConfiguration {
 	@Value("${egov.localization.statelevel}")
 	private Boolean isLocalizationStateLevel;
 
-	// User Config
-	@Value("${egov.user.host}")
-	private String userHost;
-
 	// USER EVENTS
 	@Value("${egov.ui.app.host}")
 	private String uiAppHost;
@@ -177,14 +182,17 @@ public class RequestServiceConfiguration {
 
 	@Value("${egov.localization.fallback.locale}")
 	private String fallBackLocale;
-	
+
 	@Value("${egov.application.view.link}")
 	private String viewApplicationLink;
-	
+
 	@Value("${rs.business.service.name}")
 	private String businessServiceName;
-	
+
 	@Value("${rs.module.name}")
 	private String moduleName;
-	
+
+	@Value("${egov.rs.avg.rating.comment.mandatory}")
+	private String averageRatingCommentMandatory;
+
 }
